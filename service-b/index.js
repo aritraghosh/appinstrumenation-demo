@@ -5,7 +5,7 @@ const port = 3001;
 
 app.get('/api/b', async (req, res) => {
   try {
-    const response = await axios.get('http://service-c:3002/api/c');
+    const response = await axios.get('http://service-c/api/c');
     res.send(`Service B forwarded to Service C: ${response.data}`);
   } catch (error) {
     res.status(500).send('Error in Service B');
