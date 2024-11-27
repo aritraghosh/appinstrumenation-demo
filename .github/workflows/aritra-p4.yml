@@ -40,14 +40,14 @@ on:
 env:
   ACR_RESOURCE_GROUP: a
   AZURE_CONTAINER_REGISTRY: arinewreg
-  CONTAINER_NAME: service-a
+  CONTAINER_NAME: service-b
   CLUSTER_RESOURCE_GROUP: a
   CLUSTER_NAME: aritraaut
   DEPLOYMENT_MANIFEST_PATH: |
-    ./k8s/service-a-deployment.yaml
-    ./k8s/service-a-svc.yaml
-  DOCKER_FILE: ./service-a/Dockerfile
-  BUILD_CONTEXT_PATH: ./service-a
+    ./k8s/service-b-deployment.yaml
+    ./k8s/service-b-svc.yaml
+  DOCKER_FILE: ./service-b/Dockerfile
+  BUILD_CONTEXT_PATH: ./service-b
   NAMESPACE: app-demo
 
 jobs:
