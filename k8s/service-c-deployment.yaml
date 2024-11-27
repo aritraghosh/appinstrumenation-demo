@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: service-c
-          image: <your-dockerhub-username>/service-c:latest
+          image: arinewreg.azurecr.io/service-c:latest
           ports:
             - containerPort: 3002
